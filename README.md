@@ -1,5 +1,38 @@
 # Movie Performance Analysis Overview
 
+**Author:** Isabella Scribner
+
+## Overview
+
+
+
+## Business Problem
+
+## Data
+
+## Methods
+
+## Results
+
+## Conclusions
+### Next Steps
+
+## For More Information
+
+See full analysis in the Jupyter Notebook, or review in this presentation.
+
+## Repository Structure
+
+```
+├── images
+├── zippedData
+├── movie_performance_analysis.ipynb
+├── README.md
+├── Movie_Performance_Presentation.pdf (???)
+```
+
+
+
 Examples of some different things in text for when put this overview together for final submission:
 
 Insert a picture:
@@ -15,7 +48,7 @@ Bulited list (linked to different sections of this page?)
 
 ### Even Smaller Header
 
-Words in `these` are boxed and have red text
+
 
 Bulletted list with external links:
 * [Box Office Mojo](https://www.boxofficemojo.com/)
