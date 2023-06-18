@@ -30,21 +30,41 @@ Python, with the pandas, sqlite3, and matplotlib libraries, along with descripti
 
 ## Results
 
+The analysis goes over four main questions using the extracted data:
 
+> 1. What genres of movies make the most domestic gross income?
+
+The striking outlier was the `Family, Fantasy, Musical` genre that spiked high above the rest of the data. Furthermore, the Action and Adventure genres were present as aspects of many of the genres that made the most domestic gross income on average over the past 20 years.
+    
+> 2. What genres of movies are the most expensive to make?
+
+Action and Adventure genres pop up as aspects in the genres with the highest production budgets.  The other notable genre that appears as an aspect in many of the top ten is Science Fiction.
+
+> 3. What genres of movies make the most amount of profit?
+
+Again, the `Family, Fantasy, Musical` genre far surpases any other genre in terms of average net incomme over the past 20 years. The other notable genres included Action, Adventure, Drama, and Comedy.
+
+> 4. What genres of movies are the most popular?
+
+The Action, Adventure, and Drama genres are all highly rated. The `Action, Adventure, Sci-Fi` genre specifically had more interaction from audiences (more votes) than any other genre from the TMDB data, however even that outlier had substantially less interaction than the top ten from the IMDB data; Drama was the most interacted with from this data set, which can be explained in part as it is the genre that has the most amount of movies total.  Lastly, we see that drama, documentary, and comedy movies are all quite popular.
 
 ## Conclusions
 
+Putting the results all together, there are a few different directions Microsoft could direct their movie studio to.  The surest best seems to be to pursue movies in the action and adventure genres. While they are on the higher end of the budget spectrum, movies with these two categories incorporated in their genres have been popular and made profits over the past 20 years. 
 
+They could also look into creating dramas, as they would cost less money to make, would still make decent profit and gain traction and interaction with audiences as they tend to be quite popular.  Although they would be competing with a wide scope of movies already in this genre.
+
+If interested in more of a niche market, Documentaries would be the way to go as they would be generally very well received by viewers, and would not be as expensive to create, even if profits would also be less as well.  
+
+Lastly, Microsoft could pursue the family-friendly types of movies.  The positives of going in this direction is that these movies tend to be very popular, and have the potential to garner the highest net income by leaps and bounds.  However, this would also be a rather competitive market, going up against companies like Disney and Pixar that have, and continue to dominate the market.
 
 ### Next Steps
 
-Just with the data provide, so much more analysis can be done; for example, what directors were the most successful by all the measures of success? What writers were most successful? Furthermore, analysis of how successful genres, directors, and writers are over time would be very helpful in identifiying trends or cycles of success (both seasonally within a single year, as well as over a span of years).  Additionally, it would be usfuly to dig into more recent data -- the information provided was lacking sufficient entries for acceptable generalizations for just the past 5 years. 
-
-Lastly, all of this analysis, while extremely useful in pointing the company in the right direction for the venture, must be put in context with what exactly the company is aiming to achieve, what their values are in creating content (for example what messages would they like to put out into the world), and what their budget looks like.
+Further research and planning of course must be completed prior to the launch of this new venture. Other than just a genre study, information on what directors and writers have been successful would be imperative to see who to potentially hire. Furthermore, investigation on trends over time would be helpful, both in identifying trends genres that do well when released in a specific time of year (such as releasing a holiday themed drama in November or December rather than in March or June), and in historical trends over the years.  It would also be good to dig into more recent data as well, looking only at the past five years rather than averages over the past 20. Lastly, investigating how all of these results change when talking on an international level rather than only domestically would need to be investigated prior to expanding business in this direction as well.
 
 ## For More Information
 
-See the full analysis of the genre results in the Jupyter Notebook, or review in this presentation.
+See the full analysis of the genre results in the [Jupyter Notebook](https://github.com/Bella3s/movie-analysis-project/blob/master/movie_performance_analysis.ipynb), or review in this presentation.
 
 ## Repository Structure
 
@@ -57,28 +77,3 @@ See the full analysis of the genre results in the Jupyter Notebook, or review in
 ├── README.md
 ├── Movie_Performance_Presentation.pdf (???)
 ```
-
-
-
-Examples of some different things in text for when put this overview together for final submission:
-
-Insert a picture:
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-phase-1-project-v2-4/master/awesome.gif)
-
-Insert an image:
-![movie data erd](https://raw.githubusercontent.com/learn-co-curriculum/dsc-phase-1-project-v2-4/master/movie_data_erd.jpeg)
-
-Bulleted list with Sub Bullets
-* `im.db.zip`
-  * Zipped SQLite database (you will need to unzip then query using SQLite)
-  * `movie_basics` and `movie_ratings` tables are most relevant
-* `bom.movie_gross.csv.gz`
-  * Compressed CSV file (you can open without expanding the file using `pd.read_csv`)
-
-
-
-The text below is in a indedted box seperat from the normal text:
-
-> Communicating basic data analysis results to diverse audiences via writing and live presentation
-
-> Refer to the [repository readability reading](https://github.com/learn-co-curriculum/dsc-repo-readability-v2-2) for more tips on best practices
