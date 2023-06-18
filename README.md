@@ -64,16 +64,15 @@ Further research and planning of course must be completed prior to the launch of
 
 ## For More Information
 
-See the full analysis of the genre results in the [Jupyter Notebook](https://github.com/Bella3s/movie-analysis-project/blob/master/movie_performance_analysis.ipynb), or review in this presentation.
+See the full analysis of the genre results in the [Jupyter Notebook](https://github.com/Bella3s/movie-analysis-project/blob/master/movie_performance_analysis.ipynb), or review in this [presentation](https://github.com/Bella3s/movie-analysis-project/blob/master/pdfs/presentation.pdf).
 
 ## Repository Structure
 
-**pretty sure I need a folder with the presentation + jupyter notebook in PDF format ???**
 
 ```
 ├── images
+├── pdfs
 ├── zippedData
-├── movie_performance_analysis.ipynb
 ├── README.md
-├── Movie_Performance_Presentation.pdf (???)
+├── movie_performance_analysis.ipynb
 ```
