@@ -4,12 +4,12 @@
 
 ## Overview
 
-This project takes in movie data from four different sources in order to analyze what movies have been successful. The analysis shows that (actionable suggestions here). Microsoft can utilize this data in its consideration of the new movie studio venture.
+This project takes in movie data from four different sources in order to analyze what movies have been successful. The analysis shows that the genres of action, adventure, and family-friendly, movies with a production pudget between $10 and $50 million, and movies with a length of 90 to 120 minutes are the most successful. Microsoft can utilize this data in its consideration of the new movie studio venture.
 
 
 ## Business Problem
 
-Microsoft would like some initial data one what movies have been "recently successful in the box office."  In this analysis we explore in depth specifically what genres have done well on average over the past twenty years.  Furthermore, this analysis focuses on domestic results as the venture would most likely be tested here prior to being released internationally.  In order to see what genres have been sucessful, both measures of monitary success and popularity will be taken into consideration.
+Microsoft would like some initial data one what movies have been "recently successful in the box office."  In this analysis we explore in depth specifically what genres have done well on average over the past twenty years, as well as the common production budget and length of movies that have been successful.  This analysis focuses on domestic results as the venture would most likely be focused here prior to being released internationally.  
 
 
 ## Data
@@ -21,12 +21,14 @@ Four sources of movie data was provided for this analysis:
 * [TheMovieDatabase](https://www.themoviedb.org/)
 * [The Numbers](https://www.the-numbers.com/)
 
-While the data from Rotten Tomatoes is disregared in this analysis due to the smaller sample size, the rest of the four sources are utilized. The data includes swaths of information including movie title names, domestic gross income, production budget, genre, vote count, vote average, etc.
+While the data from Rotten Tomatoes is disregarded in this analysis due to the smaller sample size, the rest of the four sources are utilized.  The data from IMDB specifically is used the most and interwoven with the other sources as needed.  The IMDB data includes more than 100,000 movie entries, or instances of data.  Some of this is lost when joined with the three other sources.
+
+The other sources of data include important information used to measure the success, domestic gross income, production budget, (extrapolated) domestic net income, runtime minutes, rating, and vote count.  This project, focused on the average income and budgets by genre over the past twenty years.  The analysis also notes the distribution of production budgets and runtime lengths for the top 100 grossing movies from the past twenty years.
 
 
 ## Methods
 
-Python, with the pandas, sqlite3, and matplotlib libraries, along with descriptive statistics are utilized to show what genres have been most successful on average over the past twenty years. As this analysis focuses on genres, the data (after being cleaned) is all grouped by this variable, and then then the top ten most 'sucessful' are graphed for each measure of success. 
+Python, with the pandas, sqlite3, and matplotlib libraries, along with descriptive statistics are utilized to show what genres have been most successful on average over the past twenty years. As this analysis focuses on genres, the data (after being cleaned) is all grouped by this variable, and then the top ten most successful are graphed for each measure of success. 
 
 ## Results
 
@@ -42,13 +44,36 @@ Action and Adventure genres pop up as aspects in the genres with the highest pro
 
 > 3. What genres of movies make the most amount of profit?
 
-Again, the `Family, Fantasy, Musical` genre far surpases any other genre in terms of average net incomme over the past 20 years. The other notable genres included Action, Adventure, Drama, and Comedy.
+![netIncomeByGenre](images/highestNetIncome.png)
+
+Again, the `Family, Fantasy, Musical` genre far surpases any other genre in terms of average net income over the past 20 years. The other notable genres included Action, Adventure, Drama, and Comedy.
 
 > 4. What genres of movies are the most popular?
 
 The Action, Adventure, and Drama genres are all highly rated. The `Action, Adventure, Sci-Fi` genre specifically had more interaction from audiences (more votes) than any other genre from the TMDB data, however even that outlier had substantially less interaction than the top ten from the IMDB data; Drama was the most interacted with from this data set, which can be explained in part as it is the genre that has the most amount of movies total.  Lastly, we see that drama, documentary, and comedy movies are all quite popular.
 
+> 5. What was the most common production budget from the most successful movies?
+
+![budgetDistributionGraph](images/distributionProductionBudget.png)
+
+A vast majority of the top 100 grossing movies had a production budget of under $50 million.  Of these movies, taking a deeper look at the successful movies of a production budget under $50 million, we can see that a noteable amount have a budget under $10 million as well, though the range of $10-40 million is in total most common.
+
+> 6. What was the most common runtime length from the most successful movies?
+
+![runtimeDistributionGraph](images/distributionMovieLength.png)
+
+The analysiis quite clearly displayes that the most successful movies are between 90 and 120 minutes long.  
+
+
 ## Conclusions
+
+1. Genre Recommendation
+    * Action + Adventure
+    * Family-Friendly
+2. Production Budget Recommendation
+    * $50 million or less
+3. Movie Length Recommendation
+    * 90-120 minutes
 
 Putting the results all together, there are a few different directions Microsoft could direct their movie studio to.  The surest best seems to be to pursue movies in the action and adventure genres. While they are on the higher end of the budget spectrum, movies with these two categories incorporated in their genres have been popular and made profits over the past 20 years. 
 
@@ -56,7 +81,11 @@ They could also look into creating dramas, as they would cost less money to make
 
 If interested in more of a niche market, Documentaries would be the way to go as they would be generally very well received by viewers, and would not be as expensive to create, even if profits would also be less as well.  
 
-Lastly, Microsoft could pursue the family-friendly types of movies.  The positives of going in this direction is that these movies tend to be very popular, and have the potential to garner the highest net income by leaps and bounds.  However, this would also be a rather competitive market, going up against companies like Disney and Pixar that have, and continue to dominate the market.
+Microsoft could pursue the family-friendly types of movies.  The positives of going in this direction is that these movies tend to be very popular, and have the potential to garner the highest net income by leaps and bounds.  However, this would also be a rather competitive market, going up against companies like Disney and Pixar that have, and continue to dominate the market.
+
+Moving forward from the genre portion of the study, it is highly advisable that the studio keeps their production budgets at or under $50 million, or even $10 million if possible.  Keeping the production budget reined in for a highly successful movie will lead to greater net profits, however it is important to keep in mind the quality of the movie.  If the movie is not of good quality it will not be a success no matter how high the production budget.
+
+Lastly, it is recommended to create movies that fall between 90 and 120 minutes long.  Not only do the most successful movies generally fall within this range, but this range is also industry standard.
 
 ### Next Steps
 
